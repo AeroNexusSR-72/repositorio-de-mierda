@@ -9,16 +9,59 @@
         // Simulación de la funcionalidad con JavaScript
         const mostrarInformacion = (enfermedad) => {
             const resultado = document.getElementById("resultado");
-            resultado.innerHTML = ""; // Limpiar contenido previo
+            resultado.innerHTML = ""; // Limpiar contenido previo 
 
             const info = {
-                Cancer: "Información sobre el cáncer.",
-                Sida: "Información sobre el sida.",
-                Gripa: "Información sobre la Gripa.",
-                Diabetes: "Información sobre la Diabetes.",
-                Asma: "Información sobre la Asma.",
-                Alzheimer: "Información sobre la Alzheimer.",
-                Varicela: "Información sobre la Varicela."
+                Cancer: `Tipos comunes de cáncer:
+Los cánceres se clasifican principalmente según el tipo de células donde comienzan, y algunos de los tipos más comunes incluyen:
+
+Cáncer de pulmón: Se origina en los pulmones, y puede estar relacionado con el tabaquismo, la exposición a sustancias tóxicas o factores genéticos. Es uno de los cánceres más comunes y una de las principales causas de muerte por cáncer en el mundo.
+
+Cáncer de mama: Afecta principalmente a las mujeres (aunque también puede ocurrir en hombres) y comienza en las células de los senos. Su detección temprana mediante mamografías puede aumentar significativamente las tasas de supervivencia.
+
+Cáncer colorrectal: Afecta el colon o el recto y se desarrolla a partir de pólipos benignos en las paredes intestinales que, con el tiempo, pueden volverse cancerosos. La detección mediante colonoscopias puede prevenir su desarrollo.
+
+Leucemia: Es un tipo de cáncer que afecta a la sangre y a la médula ósea, produciendo un exceso de glóbulos blancos. Existen varios subtipos, como leucemia mieloide crónica (LMC) y leucemia linfoblástica aguda (LLA).
+
+Cáncer de próstata: Es el cáncer más común en hombres, y afecta a la glándula prostática. Generalmente es de crecimiento lento y puede no presentar síntomas hasta etapas más avanzadas.
+
+Cáncer de piel (melanoma): Afecta las células pigmentarias de la piel y está fuertemente relacionado con la exposición al sol. Es uno de los tipos de cáncer más prevenibles, pero también uno de los más agresivos si no se detecta a tiempo.
+
+Linfoma: Afecta al sistema linfático, que es parte del sistema inmunológico del cuerpo. Existen dos tipos principales: linfoma de Hodgkin y linfoma no Hodgkin.
+
+Causas del cáncer:
+El cáncer es causado por cambios o mutaciones en el ADN de las células, que pueden ser inducidos por diversos factores, tales como:
+
+Factores genéticos: Herencia de mutaciones genéticas que aumentan el riesgo de ciertos tipos de cáncer.
+Tabaquismo: Uno de los principales factores de riesgo para el cáncer de pulmón y otros tipos, como el cáncer de garganta y boca.
+Radiación: Exposición a radiación ultravioleta (como la del sol), radioterapia o radiación nuclear.
+Químicos y toxinas: Exposición a sustancias químicas como el asbesto, benceno, o ciertos pesticidas.
+Virus: Algunos virus como el papilomavirus humano (VPH) pueden aumentar el riesgo de cáncer cervical, y el virus de la hepatitis B y C puede causar cáncer hepático.
+Obesidad: Se asocia con un mayor riesgo de varios tipos de cáncer, como el de colon, esófago, riñón y mama.
+Síntomas comunes:
+Los síntomas varían según el tipo de cáncer, pero algunos signos comunes incluyen:
+
+Fatiga inexplicable.
+Pérdida de peso sin razón aparente.
+Dolor persistente o cambios en el cuerpo, como bultos o erupciones en la piel.
+Cambios en los hábitos intestinales o urinarios.
+Tos persistente o dificultad para respirar.
+Sangrado o secreción anormal.
+Tratamientos:
+El tratamiento para el cáncer depende de su tipo, estadio y localización. Algunas opciones comunes incluyen:
+
+Cirugía: Para eliminar tumores sólidos o tejidos afectados.
+Radioterapia: Uso de radiación para destruir células cancerosas o reducir el tamaño de tumores.
+Quimioterapia: Uso de medicamentos que atacan y destruyen las células cancerosas, o impiden su crecimiento y división.
+Inmunoterapia: Tratamientos que estimulan el sistema inmunológico para atacar las células cancerosas.
+Terapias dirigidas: Fármacos que atacan células cancerosas específicas o sus mecanismos de crecimiento.
+Terapia hormonal: Utilizada en ciertos tipos de cáncer, como el de mama y próstata, donde las hormonas favorecen el crecimiento del tumor.`,
+                Sida: `Información sobre el sida.`,
+                Gripa: `Información sobre la Gripa.`,
+                Diabetes: `Información sobre la Diabetes.`,
+                Asma: `Información sobre la Asma.`,
+                Alzheimer: `Información sobre la Alzheimer.`,
+                Varicela: `Información sobre la Varicela.`
             };
 
             if (info[enfermedad]) {
