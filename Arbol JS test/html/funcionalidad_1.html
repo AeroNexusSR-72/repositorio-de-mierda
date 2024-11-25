@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>Funcionalidad_1</title>
+    <script>
+        // Simulación de la funcionalidad con JavaScript
+        const mostrarInformacion = (enfermedad) => {
+            const resultado = document.getElementById("resultado");
+            resultado.innerHTML = ""; // Limpiar contenido previo
+
+            const info = {
+                Cancer: "Información sobre el cáncer.",
+                Sida: "Información sobre el sida.",
+                Enfermedad_3: "Información sobre la Enfermedad 3.",
+                Enfermedad_4: "Información sobre la Enfermedad 4.",
+                Enfermedad_5: "Información sobre la Enfermedad 5."
+            };
+
+            if (info[enfermedad]) {
+                const titulo = document.createElement("h3");
+                titulo.innerText = enfermedad;
+                const descripcion = document.createElement("p");
+                descripcion.innerText = info[enfermedad];
+
+                resultado.appendChild(titulo);
+                resultado.appendChild(descripcion);
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <header>
+        <!-- Aquí puedes incluir tu barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidad1.html">Funcionalidad 1</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>Funcionalidad_1: Árbol Binario</h1>
+    
+    <main class="contenedor">
+        <section class="intro">            
+            <h2>ð Instrucciones:</h2>
+            <ul>
+                <li>Haz clic en un botón para obtener información sobre una enfermedad específica.</li>
+            </ul>
+        </section>
+        
+        <section class="enfermedades">
+            <h3>Elige una enfermedad para obtener más información:</h3>
+            <form onsubmit="event.preventDefault();">
+                <input type="button" value="Cancer" onclick="mostrarInformacion('Cancer')">
+                <input type="button" value="Sida" onclick="mostrarInformacion('Sida')">
+                <input type="button" value="Enfermedad_3" onclick="mostrarInformacion('Enfermedad_3')">
+                <input type="button" value="Enfermedad_4" onclick="mostrarInformacion('Enfermedad_4')">
+                <input type="button" value="Enfermedad_5" onclick="mostrarInformacion('Enfermedad_5')">
+            </form>
+        </section>
+
+        <section>
+            <h3>Información</h3>
+            <div id="resultado"></div>
+        </section>
+    </main>
+</body>
+</html>
