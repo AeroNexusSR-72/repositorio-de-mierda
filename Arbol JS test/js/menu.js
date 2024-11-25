@@ -4,7 +4,7 @@ document.getElementById('menu').innerHTML = `
     <link rel="stylesheet" href="../css/style.css">
     <nav>
         <ul>
-            <li><a href="i../html/index.html">Inicio</a></li>
+            <li><a href="../html/index.html">Inicio</a></li>
             <li><a href="../html/funcionalidad_1.html">Glorario</a></li>
         </ul>
     </nav>
